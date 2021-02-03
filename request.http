@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/v1/users
+
+###
+
+POST http://localhost:3000/api/v1/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "hello",
+    "lastname": "world",
+    "age": 500
+}
+
+###
+
+PUT http://localhost:3000/api/v1/users/9 HTTP/1.1
+content-type: application/json
+
+{
+    "firstname": "michael",
+    "lastname": "jordan",
+    "age": 34
+}
+
+###
+
+DELETE http://localhost:3000/api/v1/users/2 HTTP/1.1
